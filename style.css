@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     background: #101820;
     height: 100vh;
     width: 100%;
@@ -12,6 +13,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1 {
+h1, p {
     color: #FDD26E;
 }
