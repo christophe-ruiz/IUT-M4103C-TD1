@@ -22,17 +22,15 @@
             lines.push($("<div></div>").css({'width':'40vw', 'height':'5vw', 'display':'flex'}));
         }
         for (let j = 0; j < lines.length; ++j) {
-            if (j%2==0) {
-                for (let i = 0; i < lines.length/2; i++) {
-                    $(lines[j])
-                        .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'white', 'border':'solid 1px black', 'display':'flex'}))
-                        .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'black', 'border':'solid 1px black', 'display':'flex'}))
-                }
-            } else {
-                for (let i = 0; i < lines.length/2; i++) {
-                    $(lines[j])
-                        .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'black', 'border':'solid 1px black', 'display':'flex'}))
-                        .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'white', 'border':'solid 1px black', 'display':'flex'}))
+            for (let i = 0; i < lines.length/2; i++) {
+                if (j%2==0) {
+                $(lines[j])
+                    .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'white', 'border':'solid 1px black', 'display':'flex'}))
+                    .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'black', 'border':'solid 1px black', 'display':'flex'}))
+                } else {
+                $(lines[j])
+                    .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'black', 'border':'solid 1px black', 'display':'flex'}))
+                    .append($("<div>&nbsp;</div>").css({'width':'5vw', 'height':'5vw', 'background':'white', 'border':'solid 1px black', 'display':'flex'}))
                 }
             }
             $('body').append(lines[j]);
