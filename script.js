@@ -16,9 +16,4 @@
             $('body').append(lines[i]);
         }
     });
-
-    $(function () {
-        let cssBlack =  {'width':'5vw', 'height':'5vw', 'background':'black', 'border':'solid 1px black', 'display':'flex'};
-        let cssWhite = {'width':'5vw', 'height':'5vw', 'background':'white', 'border':'solid 1px black', 'display':'flex'};
-    })
 })();
