@@ -1,4 +1,5 @@
 (function () {
+    'use strict';
     $(function () {
         let lines = [];
         let cssBlack =  {'width':'5vw', 'height':'5vw', 'background':'black', 'border':'solid 1px black', 'display':'flex'};
